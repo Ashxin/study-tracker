@@ -36,3 +36,201 @@ header p {
     color: #666;
     font-size: 1.1em;
 }
+
+.subject-section {
+    margin-bottom: 30px;
+}
+
+.subject-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.subject-section select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.3s;
+    cursor: pointer; 
+}
+
+.subject-section select:focus {
+    border-color: #667eea;
+}
+
+.timer-section {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.timer-display {
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 30px;
+    letter-spacing: 5px;
+}
+
+.timer-controls {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.control-btn {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    min-width: 120px;
+}
+
+.start-btn {
+    background: #28a745;
+    color: white;
+}
+
+.start-btn:hover:not(:disabled) {
+    background: #218838;
+    transform: translateY(-2px);
+}
+
+.pause-btn {
+    background: #ffc107;
+    color: #333;
+}
+
+.pause-btn:hover:not(:disabled) {
+    background: #e0a800;
+    transform: translateY(-2px);
+}
+
+.stop-btn {
+    background: #dc3645;
+    color: white;
+}
+
+.stop-btn:hover:not(:disabled) {
+    background: #c82333;
+    transform: translateY(-2px);
+}
+
+.control-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.stats-section {
+    margin-bottom: 30px;
+}
+
+.stats-section h2 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.stat-card {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #667eea;
+}
+
+.stat-value {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 1em;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sessions-section h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.sessions-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.no-sessions {
+    text-align: center;
+    color: #999;
+    padding: 40px;
+    font-style: italic;
+}
+
+.session-card {
+    background: white;
+    border: 2px solid #e0e0e0;
+    border-left: 5px solid #667eea;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+.session-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateX(5px);
+}
+
+.session-info {
+    flex: 1;
+}
+
+.session-subject {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.session-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.session-duration {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #667eea;
+}
+
+@media(max-width: 768px) {
+    .timer-display {
+        font-size: 3em;
+    }
+    .timer-controls {
+        flex-direction: column;
+    }
+    .control-btn {
+        width: 100%;
+    }
+}
