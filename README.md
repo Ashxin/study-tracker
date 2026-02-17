@@ -144,7 +144,7 @@ Built by Aswin Kumar B as part of a comprehensive JavaScript learning path, cove
 - Money Tracker (calculations, data aggregation)
 - Study Tracker (timers, real-time updates)
    
-**GitHub:** [@YourUsername](https://github.com/Ashxin)
+**GitHub:** https://github.com/Ashxin
 
 ## 📄 License
 
