@@ -12,6 +12,44 @@
       <h1>📚 Study Tracker</h1>
       <p>Track your study sessions and progress</p>
     </header>
+
+    <div class="subject-section">
+      <label for="subject">Subject</label>
+      <select id="subject">
+        <option value="Mathematics">Mathematics</option>
+        <option value="Physics">Physics</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Biology">Biology</option>
+        <option value="History">History</option>
+        <option value="English">English</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+
+    <div class="timer-section">
+      <div class="timer-display" id="timerDisplay">00:00:00</div>
+      <div class="timer-controls">
+        <buttton id="startBtn" class="control-btn start-btn">Start</buttton>
+        <button id="pauseBtn" class="control-btn pause-btn" disabled>Pause</button>
+        <button id="stopBtn" class="control-btn stop-btn" disabled>Stop</button>
+      </div>
+    </div>
+
+    <div class="stats-section">
+      <h2>Today's Study Time</h2>
+      <div class="stat-card">
+        <p class="stat-value" id="totalTime">0h 0m</p>
+        <p class="stat-label">Total Time</p>
+      </div>
+    </div>
+
+    <div class="sessions-section">
+      <h2>Recent Sessions</h2>
+      <div id="sessionsList" class="sessions-list">
+        <p class="mo-sessions">No sessions yet. Start your first study session!</p>
+      </div>
+    </div>
   </div>
   <script src="app.js"></script>
 </body>
